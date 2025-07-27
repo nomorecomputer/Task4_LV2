@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/scss/all.scss" />
+    <style>
+      .container {
+        width: 40%;
+
+        margin: 0 auto;
+        display: flex; /********************/
+        overflow-x: hidden; /********************/
+        align-items: start;
+        border: 1px solid #000;
+      }
+
+      .card {
+        /* height: auto; */
+        /* display: block; */
+        padding: 4px;
+      }
+      img {
+        max-width: none; /*****************/
+        width: 300px;
+        height: auto;
+        /* display: block; */
+      }
+      p {
+        /* max-width: 100%; */
+        font-size: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <img src="/assets/images/image-1.png" alt="圖片1" />
+        <p>test...</p>
+      </div>
+      <div class="card">
+        <img src="/assets/images/image-1.png" alt="圖片1" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+          placeat neque assumenda esse, a ullam? Minus temporibus adipisci,
+          nesciunt sapiente id, facilis iste harum obcaecati, veniam vel soluta
+          quis? Magni.
+        </p>
+      </div>
+      <div class="card">
+        <img src="/assets/images/image-2.png" alt="圖片2" />
+        <p>test... ...... .... ........... ..</p>
+      </div>
+      <div class="card">
+        <img src="/assets/images/image-3.png" alt="圖片3" />
+        <p>test....</p>
+      </div>
+      <div class="card">
+        <img src="/assets/images/image-4.png" alt="圖片4" />
+        <p>test....</p>
+      </div>
+      <img src="/assets/images/image-5.png" alt="圖片5" />
+    </div>
+    <div class="row" style="background-color: beige; border: 1pt solid black">
+      <div class="col-6" style="border: 1pt solid red">box1...</div>
+      <div class="col-6" style="border: 1pt solid green">box2</div>
+    </div>
+  </body>
+</html>
