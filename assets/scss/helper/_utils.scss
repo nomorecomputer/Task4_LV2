@@ -8,12 +8,6 @@
 .width-full {
   width: 100%;
 }
-.full-width-element {
-  width: 100vw;
-  position: relative; /* 或 absolute，根據需要 */
-  left: 50%;
-  margin-left: -50vw; /* 將元素向左移動一半的視口寬度 */
-}
 
 /* #endregion common style*/
 
@@ -126,14 +120,15 @@
 /****** #endregion md版 row-col */
 /****** #region 定義 sm版 row-col 4cols */
 @media (max-width: 576px) {
-  .row {
+  .row-sm {
+    width: 100%;
     margin-left: -4px;
     margin-right: -4px;
   }
   .col-sm-2 {
     padding-left: 4px;
     padding-right: 4px;
-    width: calc(100% / 4 * 2);
+    width: calc(100% / 4 * 2); //width:288+4*2 = 296
   }
 }
 /****** #endregion sm版 row-col */
